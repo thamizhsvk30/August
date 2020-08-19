@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="src//test//resources//Features",
 				glue = "com.telecom.stepdefination",
 				monochrome = true,
-				plugin ="html:target/cucumber-html-report",
+				plugin = {"html:target/cucumber-html-report","json:target/reports.json"},
 				dryRun = false,
-				tags = {"@smoke,@regression"})
+				tags = {"@smoke","@regression"})
 
 
 public class TestRunner {
